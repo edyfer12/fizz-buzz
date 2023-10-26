@@ -43,22 +43,27 @@ button {
 
 .error {    
     color: red;
-    margin: 10px 450px;
-    display:none;
+    width: 300px;
+    margin: 0 430px;
+    display: none;
 }
 
 /* Stylize the type selector */
 
 ul {
-    margin: 10px 440px;
-    font-size:20px;
+    margin: 10px 430px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
     list-style-type: none;
 }
 
 /* Stylize the class selector */
 
 .container-input {
-    text-align: center;
+    margin: 0 430px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Stylize the class selector */
