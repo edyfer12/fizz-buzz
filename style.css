@@ -38,3 +38,10 @@ ul {}
 /* Stylize the class selector */
 
 .container-input {}
+
+/* Stylize the class selector */
+
+.info {
+    margin: 50px 108px;
+    font-size: 30px;
+}
