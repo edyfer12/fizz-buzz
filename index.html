@@ -49,10 +49,6 @@
     <!--Add script-->
     
     <script>
-        
-        //Refer to the text box
-        let number = document.querySelector('input');
-
         //Refer to the button
         let btn = document.querySelector('button');
 
@@ -60,9 +56,15 @@
         let error = document.querySelector('.error');
         
         //User enters an input on text box and clicks on a button.
-        btn.addEventListener("click", () => { 
-
+        btn.addEventListener("click",() => { 
+            //Refer to the text box after user clicks the button
+            let number = parseInt(document.querySelector('input').value);
             //If the user enters a non-integer value, print 'Please enter the whole number'.
+            if(isNaN(number)){
+                error.textContent = 'Please enter the whole number';
+                //Reveal the error message
+                error.style.display = 'block';
+            }
 
             //If the user enters a number less than 1, print 'Please enter a number'.
 
