@@ -22,23 +22,42 @@ h1 {
 
 /* Stylize the type selector */
 
-input {}
+input {
+    width: 300px;
+    padding: 8px;
+    font-size: 15px;
+}
 
 /* Stylize the type selector */
 
-button {}
+button {
+    height: 36px;
+    padding: 8px;
+    border: 1px solid grey;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 15px;
+    width: 94px;
+}
 
 /* Stylize the class selector */
 
-.error {}
+.error {    
+    color: red;
+    margin: 10px 320px;
+}
 
 /* Stylize the type selector */
 
-ul {}
+ul {
+    margin: 0 318px;
+}
 
 /* Stylize the class selector */
 
-.container-input {}
+.container-input {
+    text-align: center;
+}
 
 /* Stylize the class selector */
 
