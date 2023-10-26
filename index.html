@@ -55,6 +55,7 @@
         //Refer to the paragraph with error class.
         let error = document.querySelector('.error');
 
+        //Refer to the unordered list
         let numbersList = document.querySelector('ul');
 
         //User enters an input on text box and clicks on a button
@@ -106,13 +107,12 @@
                     
                     //Hide the error message
                     removeError(error);
-                }
-                
+                }    
             }
         );
 
 
-        
+
         function removeError(error){
             error.textContent = '';
             error.style.display = 'none';
