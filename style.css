@@ -9,7 +9,9 @@
 
 /* Stylize the type selector */
 
-.container {}
+.container {
+    margin: 45px 110px;
+}
 
 /* Stylize the type selector */
 
