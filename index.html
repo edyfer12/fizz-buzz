@@ -87,25 +87,31 @@
 
                         //If the content is divisible by 3, print 'Fizz'.
                         if(counter % 3 == 0){
-                            
+                            listItem.appendChild(document.createTextNode('Fizz'));    
                         }
 
                         //If the content is divisible by 5, print 'Buzz'.
                         else if (counter % 5 == 0){
-
+                            listItem.appendChild(document.createTextNode('Buzz'));
                         }
 
                         //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
                         else if (counter % 3 == 0 && counter % 5 == 0){
-
+                            listItem.appendChild(document.createTextNode('Fizzbuzz'));
                         }
 
                         //Otherwise, print number.
                         else {
-
+                            listItem.appendChild(document.createTextNode(counter));
                         }
+                        numbersList.appendChild(listItem);
                         counter++;
                     }
+
+                    //Hide the error message
+                    error.textContent = '';
+                    error.style.display = 'none';
+                    return error.textContent;
                 }
             }
         );
