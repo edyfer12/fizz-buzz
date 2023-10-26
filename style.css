@@ -44,14 +44,16 @@ button {
 
 .error {    
     color: red;
-    margin: 10px 320px;
+    margin: 10px 450px;
     display:none;
 }
 
 /* Stylize the type selector */
 
 ul {
-    margin: 0 318px;
+    margin: 10px 440px;
+    font-size:20px;
+    list-style-type: none;
 }
 
 /* Stylize the class selector */
