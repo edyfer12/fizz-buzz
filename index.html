@@ -63,17 +63,14 @@
                 if(isNaN(number)){
                     //Reveal the error message
                     error.textContent = 'Please enter the whole number';
-                    let errorText = error.textContent;
-                    error.style.display = 'block';
-                    return errorText;
+                    showError(error);
                 }
 
                 //If the user enters a number less than 1, print 'Please enter a number'.
                 else if(number < 1) {
                     //Reveal error message
                     error.textContent = 'Please enter a number of 1 or more';
-                    error.style.display = 'block';
-                    return error.textContent;
+                    showError(error);
                 }
 
                 //If no error is found, loop from 1 to an inputted number. 
@@ -117,6 +114,10 @@
         function removeError(error){
             error.textContent = '';
             error.style.display = 'none';
+        }
+
+        function showError(error) {
+            error.style.display = 'block';
         }
 
     </script>
