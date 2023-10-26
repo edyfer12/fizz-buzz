@@ -54,32 +54,34 @@
 
         //Refer to the paragraph with error class.
         let error = document.querySelector('.error');
-        
-        //User enters an input on text box and clicks on a button.
+
+        //User enters an input on text box and clicks on a button
         btn.addEventListener("click",() => { 
-            //Refer to the text box after user clicks the button
+           //Refer to the text box 
             let number = parseInt(document.querySelector('input').value);
             //If the user enters a non-integer value, print 'Please enter the whole number'.
             if(isNaN(number)){
-                error.textContent = 'Please enter the whole number';
                 //Reveal the error message
+                error.textContent = 'Please enter the whole number';
+                let errorText = error.textContent;
                 error.style.display = 'block';
+                return errorText;
             }
 
-            //If the user enters a number less than 1, print 'Please enter a number'.
+                //If the user enters a number less than 1, print 'Please enter a number'.
 
-            //If error is found, change display value to block.
+                //If error is found, change display value to block.
 
-            //If no error is found, loop from 1 to an inputted number. 
+                //If no error is found, loop from 1 to an inputted number. 
 
-                //If the content is divisible by 3, print 'Fizz'.
+                    //If the content is divisible by 3, print 'Fizz'.
 
-                //If the content is divisible by 5, print 'Buzz'.
+                    //If the content is divisible by 5, print 'Buzz'.
 
-                //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
+                    //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
 
-                //Otherwise, print number.
-            }
+                    //Otherwise, print number.
+                }
         )
 
     </script>
