@@ -60,7 +60,13 @@
 
         //User enters an input on text box and clicks on a button
         btn.addEventListener("click",() => { 
+            //Refer to the list item
             let li = document.querySelector('li');
+
+            //Check if the list item contains any value
+            if(li){
+                li.textContent = '';
+            }
             
             //Refer to the text box 
             let number = parseInt(document.querySelector('input').value);
