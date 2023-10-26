@@ -56,7 +56,7 @@
         let error = document.querySelector('.error');
 
         //Refer to the unordered list
-        let numbersList = document.querySelector('ul');
+        let ul = document.querySelector('ul');
 
         //User enters an input on text box and clicks on a button
         btn.addEventListener("click",() => { 
@@ -78,37 +78,32 @@
 
                 //If no error is found, loop from 1 to an inputted number. 
                 else {
-                    let counter = 1;
-
-                    //Ensure that the list is not replicated when entering new input value
-
-                    if(numbersList) {
+                    let counter = 1;                    
 
                     while (counter <= number) {
-                        let listItem = document.createElement('li');
+                        let li = document.createElement('li');
 
                         //If the content is divisible by 3, print 'Fizz'.
-                        if(counter % 3 == 0){
-                            listItem.appendChild(document.createTextNode('Fizz'));    
+                        if(counter % 3 == 0 && counter % 5 != 0){
+                            li.appendChild(document.createTextNode('Fizz'));    
                         }
 
                         //If the content is divisible by 5, print 'Buzz'.
-                        else if (counter % 5 == 0){
-                            listItem.appendChild(document.createTextNode('Buzz'));
+                        else if (counter % 5 == 0 && counter % 3 !=){
+                            li.appendChild(document.createTextNode('Buzz'));
                         }
 
                         //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
                         else if (counter % 3 == 0 && counter % 5 == 0){
-                            listItem.appendChild(document.createTextNode('Fizzbuzz'));
+                            li.appendChild(document.createTextNode('Fizzbuzz'));
                         }
 
                         //Otherwise, print number.
                         else {
-                            listItem.appendChild(document.createTextNode(counter));
+                            li.appendChild(document.createTextNode(counter));
                         }
-                        numbersList.appendChild(listItem);
+                        ul.appendChild(li);
                         counter++;
-                    }
                     }
                     
                     //Hide the error message
