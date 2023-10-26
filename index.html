@@ -109,12 +109,15 @@
                     }
 
                     //Hide the error message
-                    error.textContent = '';
-                    error.style.display = 'none';
-                    return error.textContent;
+                    removeError(error);
                 }
             }
         );
+
+        function removeError(error){
+            error.textContent = '';
+            error.style.display = 'none';
+        }
 
     </script>
 
