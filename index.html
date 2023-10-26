@@ -69,6 +69,10 @@
             }
 
             //If the user enters a number less than 1, print 'Please enter a number'.
+            else if(number < 1) {
+                error.textContent = 'Please enter a number of 1 or more';
+                return error.textContent;
+            }
 
             //If error is found, change display value to block.
 
@@ -81,7 +85,7 @@
                 //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
 
                 //Otherwise, print number.
-                }
+            }
         )
 
     </script>
