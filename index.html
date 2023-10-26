@@ -69,11 +69,12 @@
             }
             
             //Refer to the text box 
-            let number = parseInt(document.querySelector('input').value);
+            let number = Number(document.querySelector('input').value);
+
             //If the user enters a non-integer value, print 'Please enter the whole number'.
-            if(isNaN(number)){
+            if(isNaN(number) || number !== parseInt(number) || number == ''){
                 //Reveal the error message
-                error.textContent = 'Please enter the whole number';
+                error.textContent = 'Please enter a whole number';
                 showError(error);
             }
 
