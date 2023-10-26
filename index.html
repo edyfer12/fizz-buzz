@@ -81,28 +81,29 @@
                     let counter = 1;                    
 
                     while (counter <= number) {
-                        let li = document.createElement('li');
+                        let li = document.querySelector('li');
+                        li.innerHTML += "<li>";
 
                         //If the content is divisible by 3, print 'Fizz'.
                         if(counter % 3 == 0 && counter % 5 != 0){
-                            li.appendChild(document.createTextNode('Fizz'));    
+                            li.innerHTML += 'Fizz';    
                         }
 
                         //If the content is divisible by 5, print 'Buzz'.
                         else if (counter % 5 == 0 && counter % 3 != 0){
-                            li.appendChild(document.createTextNode('Buzz'));
+                            li.innerHTML += 'Buzz';
                         }
 
                         //If the content is divisible by 3 and 5, print 'Fizzbuzz'.
                         else if (counter % 3 == 0 && counter % 5 == 0){
-                            li.appendChild(document.createTextNode('Fizzbuzz'));
+                            li.innerHTML += 'Fizzbuzz';
                         }
 
                         //Otherwise, print number.
                         else {
-                            li.appendChild(document.createTextNode(counter));
+                            li.innerHTML += counter;
                         }
-                        ul.appendChild(li);
+                        li.innerHTML += '</li>';
                         counter++;
                     }
                     
