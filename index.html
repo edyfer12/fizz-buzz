@@ -55,6 +55,8 @@
         //Refer to the paragraph with error class.
         let error = document.querySelector('.error');
 
+        let numbersList = document.querySelector('ul');
+
         //User enters an input on text box and clicks on a button
         btn.addEventListener("click",() => { 
                 //Refer to the text box 
@@ -76,9 +78,6 @@
                 //If no error is found, loop from 1 to an inputted number. 
                 else {
                     let counter = 1;
-
-                    let numbersList = document.querySelector('ul');
-
                     while (counter <= number) {
                         let listItem = document.createElement('li');
 
@@ -104,13 +103,16 @@
                         numbersList.appendChild(listItem);
                         counter++;
                     }
-
+                    
                     //Hide the error message
                     removeError(error);
                 }
+                
             }
         );
 
+
+        
         function removeError(error){
             error.textContent = '';
             error.style.display = 'none';
