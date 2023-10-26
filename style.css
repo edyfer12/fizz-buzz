@@ -1,11 +1,23 @@
 /* Stylize all the elements */
 
-/* Stylize the type selector */
+* {}
 
 /* Stylize the type selector */
 
+div {}
+
 /* Stylize the type selector */
+
+input {}
+
+/* Stylize the type selector */
+
+button {}
 
 /* Stylize the class selector */
 
+.error {}
+
 /* Stylize the type selector */
+
+table {}
