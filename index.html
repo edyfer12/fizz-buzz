@@ -79,6 +79,11 @@
                 //If no error is found, loop from 1 to an inputted number. 
                 else {
                     let counter = 1;
+
+                    //Ensure that the list is not replicated when entering new input value
+
+                    if(numbersList) {
+
                     while (counter <= number) {
                         let listItem = document.createElement('li');
 
@@ -103,6 +108,7 @@
                         }
                         numbersList.appendChild(listItem);
                         counter++;
+                    }
                     }
                     
                     //Hide the error message
